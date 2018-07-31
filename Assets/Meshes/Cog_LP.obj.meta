@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: 8ae959313a291c94890ee52452c70f46
+timeCreated: 1482489958
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bevelprims
+    100002: bevelprims_OutterLip
+    100004: //RootNode
+    100006: default
+    100008: extrudeSide
+    100010: faceGRP_TeethONEFront_TeethONE
+    100012: GRPIntrude
+    100014: InnerLip
+    100016: InnerSidesGRP
+    100018: MainBody
+    100020: OutterLip
+    100022: TeethONE
+    400000: bevelprims
+    400002: bevelprims_OutterLip
+    400004: //RootNode
+    400006: default
+    400008: extrudeSide
+    400010: faceGRP_TeethONEFront_TeethONE
+    400012: GRPIntrude
+    400014: InnerLip
+    400016: InnerSidesGRP
+    400018: MainBody
+    400020: OutterLip
+    400022: TeethONE
+    2300000: bevelprims
+    2300002: bevelprims_OutterLip
+    2300004: default
+    2300006: extrudeSide
+    2300008: faceGRP_TeethONEFront_TeethONE
+    2300010: GRPIntrude
+    2300012: InnerLip
+    2300014: InnerSidesGRP
+    2300016: MainBody
+    2300018: OutterLip
+    2300020: TeethONE
+    3300000: bevelprims
+    3300002: bevelprims_OutterLip
+    3300004: default
+    3300006: extrudeSide
+    3300008: faceGRP_TeethONEFront_TeethONE
+    3300010: GRPIntrude
+    3300012: InnerLip
+    3300014: InnerSidesGRP
+    3300016: MainBody
+    3300018: OutterLip
+    3300020: TeethONE
+    4300000: bevelprims
+    4300002: bevelprims_OutterLip
+    4300004: default
+    4300006: extrudeSide
+    4300008: faceGRP_TeethONEFront_TeethONE
+    4300010: GRPIntrude
+    4300012: InnerLip
+    4300014: InnerSidesGRP
+    4300016: MainBody
+    4300018: OutterLip
+    4300020: TeethONE
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
