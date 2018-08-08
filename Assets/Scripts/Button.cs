@@ -19,6 +19,7 @@ public class Button : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
 	}
 
 	void OnMouseDown(){
@@ -34,11 +35,17 @@ public class Button : MonoBehaviour {
 	IEnumerator PressButtonAnim(){
 		float t = 0.0f;
 		Vector3 StartPos = transform.position;
-		bIsPressed = true;
+        Debug.Log("Start:" + StartPos);
+        Vector3 TargetPos = Vector3.zero;
+        TargetPos.y = StartPos.y;
+        
+        TargetPos = Vector3.Lerp(StartPos, TargetPos, DistInsert / Vector3.Distance(StartPos, TargetPos));
+        Debug.Log("Target" + TargetPos);
+        bIsPressed = true;
 		while (t < TimeInsert) {
 			t += Time.deltaTime;
-			float dx = DistInsert*ButtonAnimation.Evaluate (t / TimeInsert);
-			transform.localPosition = new Vector3 (-dx, 0f, 0f);
+			float u = ButtonAnimation.Evaluate (t / TimeInsert);
+			transform.position = Vector3.Lerp(StartPos, TargetPos, u);
 			yield return null;
 		}
 		MyGameManager.ButtonAction (ButtonType);
