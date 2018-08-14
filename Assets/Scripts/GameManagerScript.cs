@@ -46,6 +46,8 @@ public class GameManagerScript : MonoBehaviour {
 
 	public Animator CanvasAnimator = null;
 
+    private AdManagerScript adsManager;
+
 	//Static Singleton Instanse
 	private static GameManagerScript _Instance = null;
 
@@ -61,14 +63,11 @@ public class GameManagerScript : MonoBehaviour {
 
 	public void ButtonAction(buttonList buttonpressed){
 		if (buttonpressed == buttonList.Play) {
-			//Debug.Log ("You press PLAY!");
-			CanvasAnimator.SetTrigger("ShowPlayPanel");
-			StartCoroutine (MyTools.MoveGObject (MainCamera, Cam3DPosPlay, Cam3DRotPlay, CameraMoveTime));
-			gamelogic.SpawnPawns ();
-			gamestate = GameState.Play;
-			test.SetActive (false);
-			gameTimer.StartTimer ();
-		} else if (buttonpressed == buttonList.Sound) {
+            //Debug.Log ("You press PLAY!");
+            adsManager.ShowRewardedAd();
+
+
+        } else if (buttonpressed == buttonList.Sound) {
 			Debug.Log ("You press Sound!");
 		} else if (buttonpressed == buttonList.Quit) {
 			Debug.Log ("QUIT THIS");
@@ -87,7 +86,9 @@ public class GameManagerScript : MonoBehaviour {
 		MainCamera.transform.eulerAngles = Cam3DRotMenu;
 		gamestate = GameState.Menu;
 		newPos.reset ();
-	}
+        adsManager = GetComponent<AdManagerScript>();
+
+    }
 
 	public Vector3 CheckNewPosition(Vector3 pos, int curI, int curJ, int curKey){
 		return gamelogic.testThisPos (pos, curI, curJ, curKey);
@@ -127,4 +128,14 @@ public class GameManagerScript : MonoBehaviour {
 	public void ResumefromTrophy(){
 		CanvasAnimator.SetTrigger("HideLeadersPanel");
 	}
+
+    public void PlayActions()
+    {
+        CanvasAnimator.SetTrigger("ShowPlayPanel");
+        StartCoroutine(MyTools.MoveGObject(MainCamera, Cam3DPosPlay, Cam3DRotPlay, CameraMoveTime));
+        gamelogic.SpawnPawns();
+        gamestate = GameState.Play;
+        test.SetActive(false);
+        gameTimer.StartTimer();
+    }
 }
