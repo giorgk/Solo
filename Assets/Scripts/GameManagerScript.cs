@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// General Comments and Value sets
+// Camera Light:
+// Spot Angle: 44.1
+// Spot Angle: 71.6
+
 public enum buttonList {Play, Sound, Trophy, Quit, Info}
 public enum GameState {Menu, Play, Pause}
 
@@ -27,7 +32,7 @@ public class GameManagerScript : MonoBehaviour {
 
 	public TimerScript gameTimer = null;
 
-	private Vector3 Cam3DPosMenu = new Vector3 (0.0f, 0.0f, -9.46f);
+	private Vector3 Cam3DPosMenu = new Vector3 (0.0f, 0.13f, -9.46f);
 	private Vector3 Cam3DRotMenu = new Vector3 (0.0f, 0.0f, 0.0f);
 	private Vector3 Cam3DPosPlay = new Vector3 (0.0f, 7.53f, -5.17f);
 	private Vector3 Cam3DRotPlay = new Vector3 (56.22f, 0.0f, 0.0f);
